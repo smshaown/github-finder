@@ -4,6 +4,12 @@ const github = new Github;
 const searchUser = document.getElementById('search-user');
 
 searchUser.addEventListener('keyup', (e) => {
-    if.24.30
-    github.getUser(searchText);
+    const searchText = e.target.value;
+
+    if(searchText !== ''){
+        github.getUser(searchText);
+    }else{
+        
+    }
+   
 })
